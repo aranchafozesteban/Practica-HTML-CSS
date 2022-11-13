@@ -1,7 +1,7 @@
 :root{
     --first-color: #000000; 
     --second-color: #fff; 
-    --font-size: 16px; 
+    --font-size: 50px; 
 }
 
 /* navegación */
@@ -16,11 +16,8 @@
     margin: 10px
 }
 
-.navbar .menu{
-    display: flex;
-    margin-left: 10px;
-    justify-content: space-between;
-    
+.navbar .menu .link{
+    display: none;
 }
 
 /*poner footer también*/
@@ -30,14 +27,24 @@
     
 }
 
-.navbar .menu .link {
-    margin-left: 10px;
-    display: none;
+
+.navbar .menu {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.navbar .menu .aside{
-    display: flex;
-    position:relative;
-    justify-content: left;
-    align-content: center;
+/* Adaptando a Desktop*/
+@media screen and (min-width:576px) {
+    .navbar .menu .link{
+        margin-left: 10px;
+        display: flex;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .navbar .menu {
+        display: flex;
+        margin-left: 10px;
+        justify-content: space-between;
+    }
 }
