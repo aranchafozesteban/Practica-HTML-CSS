@@ -114,13 +114,13 @@
 
             <div class="div">
                 <label class= "input" for="tag-github">Tag GitHub</label>
-                <input type="text" id="tag-github" name="tag-github" placeholder="Añade tu usuario de GitHub">
+                <input type="text" id="tag-github" name="tag-github" placeholder="Añade tu usuario de GitHub" pattern="^@[^\s]+">
                 
             </div>
 
             <div class="div">
-                <label class= "input" for="bio">Biografía</label>
-                <textarea required id="bio" maxlength="180"></textarea>
+                <label class= "input" for="bio">¿Cómo puedo ayudarte?</label>
+                <textarea required id="bio" maxlength="180" placeholder="Máximo 180 caracteres"></textarea>
             </div>
             <input type="submit" value="Send :)">
         </form>    
