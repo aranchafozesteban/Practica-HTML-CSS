@@ -1,0 +1,43 @@
+:root{
+    --first-color: #000000; 
+    --second-color: #fff; 
+    --font-size: 16px; 
+}
+
+/* navegación */
+.navbar{
+    padding: 0 15px;
+    display: flex;
+}
+
+.navbar .logo {
+    width: 15%;
+    max-width: 80px;
+    margin: 10px
+}
+
+.navbar .menu{
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+    
+}
+
+/*poner footer también*/
+.navbar {
+    background-color: var(--first-color);
+    color: var(--second-color)
+    
+}
+
+.navbar .menu .link {
+    margin-left: 10px;
+    display: none;
+}
+
+.navbar .menu .aside{
+    display: flex;
+    position:relative;
+    justify-content: left;
+    align-content: center;
+}
