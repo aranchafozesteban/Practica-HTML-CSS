@@ -12,10 +12,10 @@
 .navbar{
     background-color: var(--first-color);
     color: var(--second-color);
-    padding: 6px;
-    margin-right: 10px;
-    width: 380px;
-    height: 50px;
+    padding: 5px;
+    margin-right: 50px;
+    width: 328px;
+    height: 70px;
     justify-content: space-between;
     display: flex;
 }
@@ -25,6 +25,7 @@
 }
 
 .navbar .logo {
+    margin-top: 10px;
     margin-bottom: 7px;
     margin-left: 20px;
     
@@ -32,8 +33,8 @@
 .navbar .span{
     display: inline-block;
     font-size: 24px;
-    margin-right: 85px;
-    margin-top: 15px;
+    margin-right: 65px;
+    margin-top: 20px;
 }
 
 .navbar .list{
@@ -41,8 +42,7 @@
     text-decoration: none;
 }
 .cabecera{
-    height: auto;
-    
+    width: 338px;
 }
 
 /* main*/
@@ -179,22 +179,9 @@
     .navbar {
         flex-wrap: nowrap;
         width: auto;
-        margin-right: 0;
+        padding-right: 10px;
+        margin-right: 10px;
         
-    }
-}
-@media screen and (min-width:380px) {
-    .navbar .h2{
-        visibility: hidden;
-        
-    }
-}
-
-@media screen and (min-width:380px) {
-    .navbar .menu .link{
-        margin-left: 10px;
-        visibility: visible;
-        display: flex;
     }
 }
 
@@ -216,18 +203,33 @@
 }
 
 @media screen and (min-width:380px) {
-    .navbar .menu .link {
+    .navbar .menu .list {
         display: flex;
         text-decoration: none;
+        margin-top: 20px;
         margin-left: 10px;
+        margin-right: 50px;
         justify-content: space-between;
         visibility: visible;
     }
 }
 
 @media screen and (min-width:380px) {
+     .list:hover {
+        color: #cc87d8;
+    }
+}
+
+@media screen and (min-width:380px) {
+    .list {
+       transition: color 1s linear;
+   }
+}
+
+@media screen and (min-width:380px) {
     .navbar .span{
         display: none
+        
     }
 }
 
@@ -250,6 +252,15 @@
         
     }
 }
+
+/*main*/
+@media screen and (min-width:380px) {
+    .descripcion{
+        width: 90%;
+        
+        
+    }
+}
 /*cabecera*/
 @media screen and (min-width:380px) {
     .cabecera{
@@ -258,6 +269,13 @@
     }
 }
 
+/*skills*/
+@media screen and (min-width:380px) {
+    .progreso{
+        height: 10px;
+        width: 80%;
+    }
+}
 /*footer*/
 @media screen and (min-width:380px) {
     .footer{
@@ -266,7 +284,7 @@
     }
 }
 /*transiciones*/
-@keyframes barra{
+@keyframes barra {
     0%{
         opacity: 0;
         background-color: #fff ;
