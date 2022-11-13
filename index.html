@@ -31,18 +31,92 @@
         <img class="cabecera" src="/hogwarts.webp" alt="Hogwarts" width=100%>
     </header>
 
+    <main>
+        <h1 class="luna" >Luna Lovegood</h1>
+        <p>Me llamo Luna Lovegood, estoy estudiando en Hogwarts y soy Ravenclaw.
+            Soy sonámbula, ¿Sabes? Por eso me acuesto con zapatillas  </p>
+    </main>
+
+    <section>
+        <fieldset>
+            <legend>Skills</legend>
+
+            <label for="Inteligencia">Inteligencia</label>
+            <progress id="inteligencia" max="100" value="92">90%</progress>
+
+            <label for="creatividad">Creatividad</label>
+            <progress id="creatividad" max="100" value="99">99%</progress>
+
+            <label for="leal">Leal</label>
+            <progress id="leal" max="100" value="94">94%</progress>
+
+            <label for="divertida">Divertida</label>
+            <progress id="divertida" max="100" value="79">79%</progress>
+
+            <label for="sociable">Sociable</label>
+            <progress id="sociable" max="100" value="35">35%</progress>
+        </fieldset>
+    </section>
+
+    <section>
+        <form action="/registro.html" method="post">
+            <div>
+                <label for="name">Nombre</label>
+                <input required id="name" name="name" type="text" placeholder="Añade tu nombre">
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input required id="apellido" name="apellido" type="text" placeholder="Añade tu apellido">
+            </div>
+            <div>
+                <label for="phonr">Teléfono</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]+" placeholder="Añade tu teléfono">
+            </div>
+            
+            <fieldset> 
+                <legend>¿Cómo me conociste?</legend>
+
+                <label for="KeepCoding">Keepcoding kick-off</label>
+                <input required id="KeepCoding" type="radio" name="lugar" value="Keepcoding kick-off">
+
+                <label for="hogwarts">Hogwarts</label>
+                <input required id="hogwarts" type="radio" name="lugar" value="keepcoding kick-off">
+
+                <label for="callejon-madriagon">Callejón Madriagón</label>
+                <input required id="callejon-madriagon" type="radio" name="lugar" value="callejon-madriagon">
+
+                <label for="GitHub">GitHub</label>
+                <input required id="github" type="radio" name="lugar" value="GitHub">
+            </fieldset>
+
+            <div>
+                <label for="tag-github">Tag GitHub</label>
+                <input type="text" id="tag-github" name="tag-github" placeholder="Añade tu usuario de GitHub">
+                
+            </div>
+
+            <div>
+                <label for="bio">Biografía</label>
+                <textarea required id="bio" maxlength="180"></textarea>
+            </div>
+            <input type="submit" value="Send :)">
+        </form>    
+            
+       
+    </section>
+
     <footer>
         <div>
             <img class="instagram" src="/instagram.webp" alt="instagram" width="15px">
-            <a class= "link-insta" href="https://www.instagram.com/hogwartslegacy/?hl=es">Instagram</a>
+            <a class= "link-insta" target="_blank" href="https://www.instagram.com/hogwartslegacy/?hl=es">Instagram</a>
         </div>
         <div>
             <img class="twitter" src="/twitter.png" alt="Twitter" width="15px">
-            <a class= "link-twitter" href="https://twitter.com/HogwartsLegacy">Twitter</a>
+            <a class= "link-twitter" target="_blank" href="https://twitter.com/HogwartsLegacy">Twitter</a>
         </div>
         <div>
             <img class="wikipedia" src="/wikipedia.png" alt="Wikipedia" width="15px">
-            <a class= "link-wiki" href="https://en.wikipedia.org/wiki/Luna_Lovegood">Wikipedia</a>
+            <a class= "link-wiki" target="_blank" href="https://en.wikipedia.org/wiki/Luna_Lovegood">Wikipedia</a>
         </div>
     </footer>
 
