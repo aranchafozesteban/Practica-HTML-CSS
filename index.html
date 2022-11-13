@@ -9,94 +9,117 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 
-<body>
+<body class="body">
 
     <nav class="navbar">
-        <img class="logo" src="/lunalovegood.jpg" alt="Luna Lovegood" width="40px">
+        <img class="logo" src="/lunalovegood.jpg" alt="Luna Lovegood" width="100%">
+        <h2 class="h2" >Menú</h2> 
         <ul class="menu">
             <li>
-                <a class="link" href="#">Proyectos</a>
+                <a class="list" href="#">Proyectos</a>
             </li>
             <li>
-                <a class="link" href="#">Skills</a>
+                <a class="list" href="#">Skills</a>
             </li> 
             <li>
-                <a class="link" href="#">Contacto</a>
+                <a class="list" href="#">Contacto</a>
             </li> 
         </ul>
-        <div class="aside">Menú</div> 
     </nav>
     
+    <hr class="separador">
+
     <header>
         <img class="cabecera" src="/hogwarts.webp" alt="Hogwarts" width=100%>
     </header>
 
-    <main>
-        <h1 class="luna" >Luna Lovegood</h1>
-        <p>Me llamo Luna Lovegood, estoy estudiando en Hogwarts y soy Ravenclaw.
+    <main class="principal">
+        <section>
+            <h1 class="luna" >Luna Lovegood</h1>
+            <p class="descripcion">Me llamo Luna Lovegood, estoy estudiando en Hogwarts y soy Ravenclaw.
             Soy sonámbula, ¿Sabes? Por eso me acuesto con zapatillas  </p>
+        </section>
+        
     </main>
 
     <section>
-        <fieldset>
-            <legend>Skills</legend>
+        <fieldset class="section1">
+            <legend class="skills">Skills</legend>
+            <div class="div">
+                <label for="Inteligencia">Inteligencia</label>
+            <progress class="progreso" id="inteligencia" max="100" value="92">90%</progress>
+            </div>
+            
+            <div class="div">
+                <label for="creatividad">Creatividad</label>
+                <progress class="progreso" id="creatividad" max="100" value="99">99%</progress>
+            </div>
 
-            <label for="Inteligencia">Inteligencia</label>
-            <progress id="inteligencia" max="100" value="92">90%</progress>
+            <div class="div">
+                <label for="leal">Leal</label>
+                <progress class="progreso" id="leal" max="100" value="94">94%</progress>
+            </div>
+            
+            <div class="div">
+                <label for="divertida">Divertida</label>
+            <progress class="progreso" id="divertida" max="100" value="79">79%</progress>
+            </div>
 
-            <label for="creatividad">Creatividad</label>
-            <progress id="creatividad" max="100" value="99">99%</progress>
-
-            <label for="leal">Leal</label>
-            <progress id="leal" max="100" value="94">94%</progress>
-
-            <label for="divertida">Divertida</label>
-            <progress id="divertida" max="100" value="79">79%</progress>
-
-            <label for="sociable">Sociable</label>
-            <progress id="sociable" max="100" value="35">35%</progress>
+            <div class="div">
+                <label for="sociable">Sociable</label>
+                <progress class="progreso" id="sociable" max="100" value="35">35%</progress> 
+            </div>
+    
         </fieldset>
     </section>
 
     <section>
-        <form action="/registro.html" method="post">
-            <div>
-                <label for="name">Nombre</label>
-                <input required id="name" name="name" type="text" placeholder="Añade tu nombre">
+        <h2 class="contacto">Contacto</h2>
+        <form action="/registro.html" method="post" class="formulario">
+            <div class="div">
+                <label class= "input" for="name">Nombre</label>
+                <input required id="name" name="name" type="text" placeholder="Añade tu nombre" >
             </div>
-            <div>
-                <label for="apellido">Apellido</label>
-                <input required id="apellido" name="apellido" type="text" placeholder="Añade tu apellido">
+            <div class="div">
+                <label class= "input" for="apellido">Apellido</label>
+                <input required id="apellido" name="apellido" type="text" placeholder="Añade tu apellido" >
             </div>
-            <div>
-                <label for="phonr">Teléfono</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]+" placeholder="Añade tu teléfono">
+            <div class="div">
+                <label class= "input" for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]+" placeholder="Añade tu teléfono" >
             </div>
             
-            <fieldset> 
-                <legend>¿Cómo me conociste?</legend>
+            <fieldset class="div"> 
+                <legend class= "input" >¿Cómo me conociste?</legend>
+                <div class="div">
+                    <label class="tab" for="KeepCoding">Keepcoding kick-off</label>
+                    <input class= "input" required id="KeepCoding" type="radio" name="lugar" value="Keepcoding kick-off" >
+                </div>
 
-                <label for="KeepCoding">Keepcoding kick-off</label>
-                <input required id="KeepCoding" type="radio" name="lugar" value="Keepcoding kick-off">
+                <div class="div">
+                    <label  class="tab" for="Hogwarts">Hogwarts</label>
+                    <input required id="hogwwarts" type="radio" name="lugar" value="hogwarts">
+                </div>
 
-                <label for="hogwarts">Hogwarts</label>
-                <input required id="hogwarts" type="radio" name="lugar" value="keepcoding kick-off">
-
-                <label for="callejon-madriagon">Callejón Madriagón</label>
-                <input required id="callejon-madriagon" type="radio" name="lugar" value="callejon-madriagon">
-
-                <label for="GitHub">GitHub</label>
+                <div class="div">
+                    <label class="tab" for="callejon-madriagon">Callejón Madriagón</label>
+                    <input required id="callejon-madriagon" type="radio" name="lugar" value="callejon-madriagon">
+                </div>
+                <div class="div">
+                    <label class="tab" for="GitHub">GitHub</label>
                 <input required id="github" type="radio" name="lugar" value="GitHub">
+                </div>
+                
             </fieldset>
 
-            <div>
-                <label for="tag-github">Tag GitHub</label>
+            <div class="div">
+                <label class= "input" for="tag-github">Tag GitHub</label>
                 <input type="text" id="tag-github" name="tag-github" placeholder="Añade tu usuario de GitHub">
                 
             </div>
 
-            <div>
-                <label for="bio">Biografía</label>
+            <div class="div">
+                <label class= "input" for="bio">Biografía</label>
                 <textarea required id="bio" maxlength="180"></textarea>
             </div>
             <input type="submit" value="Send :)">
@@ -105,19 +128,21 @@
        
     </section>
 
-    <footer>
-        <div>
-            <img class="instagram" src="/instagram.webp" alt="instagram" width="15px">
-            <a class= "link-insta" target="_blank" href="https://www.instagram.com/hogwartslegacy/?hl=es">Instagram</a>
-        </div>
-        <div>
-            <img class="twitter" src="/twitter.png" alt="Twitter" width="15px">
-            <a class= "link-twitter" target="_blank" href="https://twitter.com/HogwartsLegacy">Twitter</a>
-        </div>
-        <div>
-            <img class="wikipedia" src="/wikipedia.png" alt="Wikipedia" width="15px">
-            <a class= "link-wiki" target="_blank" href="https://en.wikipedia.org/wiki/Luna_Lovegood">Wikipedia</a>
-        </div>
+    <footer class="footer">
+        <ul>
+            <li>
+                <img class="red" src="/instagram.webp" alt="instagram" width="15px" href="https://www.instagram.com/hogwartslegacy/?hl=es">
+                
+            </li>
+            <li>
+                <img class="red" src="/twitter.png" alt="Twitter" width="15px">
+                <a class= "link" target="_blank" href="https://twitter.com/HogwartsLegacy">Twitter</a>
+            </li>
+            <li>
+                <img class="red" src="/wikipedia.png" alt="Wikipedia" width="15px">
+                <a class= "link" target="_blank" href="https://en.wikipedia.org/wiki/Luna_Lovegood">Wikipedia</a>
+            </li>
+        </ul>
     </footer>
 
 </body>
