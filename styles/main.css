@@ -14,7 +14,7 @@
     color: var(--second-color);
     padding: 6px;
     margin-right: 10px;
-    width: 100%;
+    width: 380px;
     height: 50px;
     justify-content: space-between;
     display: flex;
@@ -32,7 +32,7 @@
 .navbar .span{
     display: inline-block;
     font-size: 24px;
-    margin-right: 30px;
+    margin-right: 85px;
     margin-top: 15px;
 }
 
@@ -42,7 +42,7 @@
 }
 .cabecera{
     height: auto;
-    weight: 100%;
+    
 }
 
 /* main*/
@@ -178,6 +178,8 @@
 @media screen and (min-width:380px) {
     .navbar {
         flex-wrap: nowrap;
+        width: auto;
+        margin-right: 0;
         
     }
 }
@@ -224,7 +226,41 @@
 }
 
 @media screen and (min-width:380px) {
+    .navbar .span{
+        display: none
+    }
+}
+
+@media screen and (min-width:380px) {
+    .navbar ul{
+        display: flex;
+        margin-right: 20px;
+        
+    }
+}
+
+@media screen and (min-width:380px) {
+    .navbar .list{
+        display: inline-flex;
+        margin-left: 30px;
+        margin-right: 30 px;
+        margin-top: 15px;
+        font-size: 20px;
+        transition: elementos 3s lineal;
+        
+    }
+}
+/*cabecera*/
+@media screen and (min-width:380px) {
     .cabecera{
+        width: 100%;
+        
+    }
+}
+
+/*footer*/
+@media screen and (min-width:380px) {
+    .footer{
         width: 100%;
         
     }
@@ -233,8 +269,21 @@
 @keyframes barra{
     0%{
         opacity: 0;
-        background-color: #fff9f9;
-        width: 0%;
+        background-color: #fff ;
+        width: 20%
+    }
+    100%{
+        opacity: 1;
+        background-color: #cc87d8;
+        width: 100%;
+    }
+}
+
+@keyframes elementos{
+    0%{
+        opacity: 0;
+        background-color: #fff;
+        width: 20%
     }
     100%{
         opacity: 1;
