@@ -12,50 +12,66 @@
 .navbar{
     background-color: var(--first-color);
     color: var(--second-color);
-    padding: 10px;
+    padding: 6px;
+    margin-right: 10px;
     width: 100%;
     height: 50px;
-    flex-wrap: nowrap;
     justify-content: space-between;
+    display: flex;
+}
+
+.navbar ul{
+    display: none;
 }
 
 .navbar .logo {
-    width: 12.5%;
-    height:90%;
-    max-width: 40px;
-    min-width: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     margin-left: 20px;
+    
 }
-.navbar .h2{
+.navbar .span{
+    display: inline-block;
     font-size: 24px;
-    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.navbar .list{
+    color:#fff;
+    text-decoration: none;
+}
+.cabecera{
+    height: auto;
+    weight: 100%;
 }
 
 /* main*/
 .principal{
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
     padding-bottom: 10px;
     padding-top: 10px;
     margin: 10px;
+    display: block;
 }
 .luna {
     font-size: 25px;
     color: #cc87d8;
     font-weight:bold;
     text-decoration: underline;
+    display: block;
 }
 
 .descripcion{
     margin-top: 15px;
     text-align: justify;
+    display: block;
 }
 
 /* section 1*/
 .section1{
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
     padding-bottom: 10px;
     padding-top: 10px;
     margin: 10px;
@@ -73,7 +89,9 @@
     padding: 10px;
     position: relative;
     animation: barra 3s linear;
+    flex-wrap: nowrap;
 }
+
 
 /* section 2*/
 .contacto{
@@ -118,15 +136,28 @@
 
 /* footer */
 .footer{
+    display: block;
     background-color: var(--first-color);
     color: var(--second-color);
-    flex-wrap: nowrap;
-    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 338px;
+    height: 80px;
+    padding-top: 20px;
 }
 
-.footer .img{
+.footer ul{
     display: flex;
-    margin-left: 10px;
+    justify-content: space-evenly;
+}
+
+.footer .red{
+    display: flex;
+    margin-left: 5px;
+    margin-right: 20px;
+    width: 45px;
+    position: absolute;
+    
     
 }
 
@@ -136,49 +167,68 @@
 }
 
 .footer .link{
-    display: none;
+    display: flex;
+    margin-top: 8px;
+    margin-right: 20px;
+    justify-content: space-evenly;
     
 }
+
 /* Adaptando a Desktop*/
-@media screen and (min-width:576px) {
+@media screen and (min-width:380px) {
+    .navbar {
+        flex-wrap: nowrap;
+        
+    }
+}
+@media screen and (min-width:380px) {
+    .navbar .h2{
+        visibility: hidden;
+        
+    }
+}
+
+@media screen and (min-width:380px) {
     .navbar .menu .link{
         margin-left: 10px;
+        visibility: visible;
         display: flex;
     }
 }
 
-@media screen and (min-width:576px) {
-    .navbar .menu {
-        display: flex;
-        margin-left: 10px;
-        justify-content: space-between;
-    }
-}
 
-@media screen and (min-width:576px) {
+
+@media screen and (min-width:380px) {
     .navbar .img {
         display: flex;
-        max-width: 40px;
-        flex-wrap: nowrap;
+        width:100%
+        
     }
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:380x) {
     .navbar .logo{
-        width: 1rem;
-        max-width: 80px;
+        display: flex
+        
     }
 }
 
-@media screen and (min-width:576px) {
-    .link {
+@media screen and (min-width:380px) {
+    .navbar .menu .link {
         display: flex;
         text-decoration: none;
         margin-left: 10px;
         justify-content: space-between;
+        visibility: visible;
     }
 }
 
+@media screen and (min-width:380px) {
+    .cabecera{
+        width: 100%;
+        
+    }
+}
 /*transiciones*/
 @keyframes barra{
     0%{
